@@ -1,0 +1,44 @@
+[
+    {
+      "_id": "1",
+      "price": "$127.10",
+      "picture": "https://thumbs.dreamstime.com/b/spark-plugs-black-background-car-motorcycle-part-143479012.jpg",
+      "name": "Spark Plug"
+    },
+    {
+      "_id": "2",
+      "price": "$271.35",
+      "picture": "https://cdn.dynamixse.com/mrcleancarwashcom/v6enginepistons3dimage.j_215142.jpg",
+      "name": "Car Piston"
+    },
+    {
+      "_id": "3",
+      "price": "$146.60",
+      "picture": "https://www.ubuy.com.bd/productimg/?image=aHR0cHM6Ly9tLm1lZGlhLWFtYXpvbi5jb20vaW1hZ2VzL0kvODE1azNIdlk1LUwuX0FDX1NMMTUwMF8uanBn.jpg",
+      "name": "Car Wheel"
+    },
+    {
+      "_id": "4",
+      "price": "$305.45",
+      "picture": "https://static-01.daraz.com.bd/p/c9042209491d81a6062b3bc54de6939d.jpg",
+      "name": "Tires"
+    },
+    {
+      "_id": "5",
+      "price": "$224.93",
+      "picture": "https://images.unsplash.com/photo-1592165399180-ad2c9711d90e?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1yZWxhdGVkfDE1fHx8ZW58MHx8fHw%3D&w=1000&q=80",
+      "name": "Steering"
+    },
+    {
+      "_id": "6",
+      "price": "$294.93",
+      "picture": "https://www.ubuy.com.bd/productimg/?image=aHR0cHM6Ly9tLm1lZGlhLWFtYXpvbi5jb20vaW1hZ2VzL0kvNTFTaCtuVUI2NkwuX0FDX1NMMTMwMF8uanBn.jpg",
+      "name": " Rearview Mirroor"
+    },
+    {
+      "_id": "7",
+      "price": "$394.93",
+      "picture": "https://www.mcgrathautoblog.com/wp-content/uploads/2021/11/windshield-wipers-1140x760.jpg",
+      "name": "Wiper"
+    }
+  ]
