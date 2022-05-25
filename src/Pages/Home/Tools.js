@@ -11,7 +11,7 @@ const Tools = () => {
 
     return (
         <div className='py-40'>
-            <h2 className='text-xl font-bold  text-center'>Our Tools</h2>
+            <h2 className='text-2xl font-bold mb-5 text-center'>Our Tools</h2>
             <div className=' grid lg:grid-cols-3 md:grid-cols-2 grid-cols-1  gap-4 '>
                 {
                     tools.slice(0, 6).map(tool => <Tool

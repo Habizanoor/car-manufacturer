@@ -13,7 +13,7 @@ const Tool = ({ tool }) => {
                    
                     <p>{tool?.description}</p>
                     <div className="card-actions">
-                        <button className="btn btn-primary">Buy Now</button>
+                        <button className="btn btn-primary">Purchase</button>
                     </div>
                 </div>
             </div>
