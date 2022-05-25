@@ -4,6 +4,7 @@ import AnyQuery from './AnyQuery';
 import Banner from './Banner';
 import BusinessSummary from './BusinessSummary';
 import Popular from './Popular';
+import Review from './Review';
 import Tools from './Tools';
 
 const Home = () => {
@@ -12,6 +13,7 @@ const Home = () => {
             <Banner></Banner>
             <Tools></Tools>
             <BusinessSummary></BusinessSummary>
+            <Review></Review>
             <Popular></Popular>
             <AnyQuery></AnyQuery>
             <Footer></Footer>

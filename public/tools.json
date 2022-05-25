@@ -6,7 +6,7 @@
       "name": "Spark Plug",
       "minOrderQuantity": "50",
       "availableQuantity": "1000",
-      "description": "This product can save fuel and run farther. Effectively solve engine jitter, improve engine performance, solve jitter, and return to calm."
+      "description": "This product can save fuel and run farther. Effectively solve engine jitter, improve engine ."
     },
     {
       "_id": "2",
@@ -15,7 +15,7 @@
       "name": "Car Piston",
       "minOrderQuantity": "90",
       "availableQuantity": "2200",
-      "description": "This product can save fuel and run farther. Effectively solve engine jitter, improve engine performance, solve jitter, and return to calm."
+      "description": "This product can save fuel and run farther. Effectively solve engine jitter, improve engine ."
     },
     {
       "_id": "3",
@@ -33,7 +33,7 @@
       "name": "Tires",
       "minOrderQuantity": "10",
       "availableQuantity": "1050",
-      "description":"suitable for all wheels Good traction and braking performance Good durability, anti-puncturing."
+      "description":"suitable for all wheels Good traction and braking performance Good durability, anti-puncturing, ensures smooth ride."
     },
     {
       "_id": "5",
