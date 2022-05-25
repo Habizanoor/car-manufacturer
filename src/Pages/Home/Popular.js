@@ -1,30 +1,38 @@
 import React from 'react';
+import popular1 from '../../images/popular/popular-1.jpg';
+import popular2 from '../../images/popular/popular-2.jpg';
+import popular3 from '../../images/popular/popular-3.jpg';
+import popular4 from '../../images/popular/popular-4.jpg';
+import popular5 from '../../images/popular/popular-5.jpg';
+import popular6 from '../../images/popular/popular-6.jpg';
+import popular7 from '../../images/popular/popular-7.jpg';
 
 const Popular = () => {
     return (
-        <div className='py-28'>
+        // w-[250px]
+        <div className='py-32'>
             <h2 className='text-2xl font-bold mb-5 text-center'>Our Popupar Items</h2>
             <div className="carousel carousel-center p-4 space-x-4 bg-neutral rounded-box py-10">
                 <div className="carousel-item">
-                    <img src="https://api.lorem.space/image/furniture?w=250&h=180&hash=8B7BCDC2" className="rounded-box" />
+                    <img src={popular1} className="w-[250px] rounded-box" />
                 </div>
                 <div className="carousel-item">
-                    <img src="https://api.lorem.space/image/furniture?w=250&h=180&hash=500B67FB" className="rounded-box" />
+                    <img src={popular2} className="w-[250px] rounded-box" />
                 </div>
                 <div className="carousel-item">
-                    <img src="https://api.lorem.space/image/furniture?w=250&h=180&hash=A89D0DE6" className="rounded-box" />
+                    <img src={popular3} className="w-[250px] rounded-box" />
                 </div>
                 <div className="carousel-item">
-                    <img src="https://api.lorem.space/image/furniture?w=250&h=180&hash=225E6693" className="rounded-box" />
+                    <img src={popular4} className="w-[250px] rounded-box" />
                 </div>
                 <div className="carousel-item">
-                    <img src="https://api.lorem.space/image/furniture?w=250&h=180&hash=9D9539E7" className="rounded-box" />
+                    <img src={popular5} className="w-[250px] rounded-box" />
                 </div>
                 <div className="carousel-item">
-                    <img src="https://api.lorem.space/image/furniture?w=250&h=180&hash=BDC01094" className="rounded-box" />
+                    <img src={popular6} className="w-[250px] rounded-box" />
                 </div>
                 <div className="carousel-item">
-                    <img src="https://api.lorem.space/image/furniture?w=250&h=180&hash=7F5AE56A" className="rounded-box" />
+                    <img src={popular7} className="w-[250px] rounded-box" />
                 </div>
             </div>
         </div>
