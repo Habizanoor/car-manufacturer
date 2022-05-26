@@ -1,6 +1,12 @@
 import React from 'react';
+import { useNavigate } from 'react-router-dom';
 
 const Tool = ({ tool }) => {
+    const navigate = useNavigate();
+    const navigateToServiceDetail = id =>{
+        navigate(`/purchase/${id}`);
+    }
+    // add korci
     return (
         <div>
             <div className="card w-50 bg-base-100 shadow-xl">
@@ -13,8 +19,9 @@ const Tool = ({ tool }) => {
                     <p>{tool?.description}</p>
                     <p className='text-xl'>Price: {tool.price}</p>
                     <div className="card-actions">
-                        <button className="btn btn-outline btn-secondary">Purchase</button>
+                        <button onClick={()=>navigateToServiceDetail(tool._id)} className="btn btn-outline btn-secondary">Purchase</button>
                     </div>
+                    {/* onclick add korci  */}
                 </div>
             </div>
         </div>
