@@ -8,8 +8,23 @@ const PurchasePage = ({ perchase }) => {
     const handleAbc = () => {
         console.log('connected with the button');
     }
-    const Cdm = () => {
-        console.log()
+    const Cdm = event => {
+        event.preventDefault();
+        const phone = event.target.phone.value;
+        const name = event.target.name.value;
+        const email = event.target.email.value;
+        const minOrder = parseInt(event.target.minOrder.value);
+        const yourOrder = parseInt(event.target.yourOrder.value);
+        const available = parseInt(event.target.available.value);
+        const address = event.target.address.value;
+        if(yourOrder<minOrder){
+            console.log('aro dew te');
+        }
+        if(yourOrder>available){
+            console.log('beshi oigece');
+        }
+
+        console.log(name, email, phone, minOrder, yourOrder, available, address);
     }
     return (
         <div>
@@ -34,7 +49,11 @@ const PurchasePage = ({ perchase }) => {
 
                                 <input type="text" name='name' disabled value={user?.displayName || ""} className="input input-bordered w-full max-w-xs" />
                                 <input type="email" name="email" disabled value={user?.email || ""} className="input input-bordered w-full max-w-xs" />
+                                <input type="number" name='minOrder' disabled value={perchase.minOrderQuantity} placeholder="Minimum Order Quantity" className="input input-bordered w-full max-w-xs" />
+                                <input type="number" name='yourOrder' placeholder="Your Order" className="input input-bordered w-full max-w-xs" required/>
+                                <input type="number" name='available' disabled value={perchase.availableQuantity} placeholder="Available Products" className="input input-bordered w-full max-w-xs" />
                                 <input type="number" name='phone' placeholder="Phone Number" className="input input-bordered w-full max-w-xs" />
+                                <input type="text" name='address' placeholder="Address" className="input input-bordered w-full max-w-xs" />
                                 <input type="submit" value="Submit" className="btn btn-secondary w-full max-w-xs" /> 
                             </form>
                         </div>
