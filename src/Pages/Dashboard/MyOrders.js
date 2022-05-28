@@ -24,8 +24,8 @@ const MyOrders = () => {
         toast('Product removed')
     }
     return (
-        <div class="overflow-x-auto">
-            <table class="table w-full">
+        <div className="overflow-x-auto">
+            <table className="table w-full">
 
                 <thead>
                     <tr>
@@ -47,8 +47,8 @@ const MyOrders = () => {
                                 <td>{order.productName}</td>
                                 <td>{order.yourOrder}</td>
                                 <td>
-                                    <button onClick={handlePayment} class="btn btn-xs">Pay Now</button>
-                                    <button onClick={handleRemove} class="btn btn-xs">Remove</button>
+                                    <button onClick={handlePayment} className="btn btn-xs">Pay Now</button>
+                                    <button onClick={handleRemove} className="btn btn-xs">Remove</button>
                                 </td>
                             </tr>
                         )

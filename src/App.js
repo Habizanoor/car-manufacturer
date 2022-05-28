@@ -22,6 +22,7 @@ import NotFound from './Pages/Shared/NotFound';
 import { ToastContainer } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
 import MakePayment from './Pages/Dashboard/MakePayment';
+import RequireAuth from './Pages/Login/RequireAuth';
 
 function App() {
   const [tools, setTools] = useState([]);
@@ -39,7 +40,11 @@ function App() {
         <Route path='/home' element={<Home></Home>}></Route>
         <Route path='/blogs' element={<Blogs></Blogs>}></Route>
         <Route path='/portfolio' element={<Portfolio></Portfolio>}></Route>
-        <Route path='/purchase/:purchaseId' element={<Purchase></Purchase>}></Route>
+        <Route path='/purchase/:purchaseId' element={
+          <RequireAuth>
+            <Purchase></Purchase>
+          </RequireAuth>
+        }></Route>
         <Route path='/dashboard' element={<Dashboard></Dashboard>}>
           <Route index element={<MyOrders></MyOrders>} />
           <Route path="review" element={<AddReview></AddReview>} />

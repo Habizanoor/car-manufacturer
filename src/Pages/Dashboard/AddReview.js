@@ -46,12 +46,12 @@ const AddReview = () => {
                     <input type="text" name='name' disabled value={user.displayName} className="input input-bordered w-full max-w-xs" />
                     <input type="email" name='email' disabled value={user.email} className="input input-bordered w-full max-w-xs" />
                     <textarea name="userReview" className="textarea w-full max-w-xs textarea-bordered" placeholder="Your Review......"></textarea>
-                    <div class="rating">
-                        <input type="radio" name="rating2" class="mask mask-star-2 bg-orange-400" />
-                        <input type="radio" name="rating2" class="mask mask-star-2 bg-orange-400" checked />
-                        <input type="radio" name="rating2" class="mask mask-star-2 bg-orange-400" />
-                        <input type="radio" name="rating2" class="mask mask-star-2 bg-orange-400" />
-                        <input type="radio" name="rating2" class="mask mask-star-2 bg-orange-400" />
+                    <div className="rating">
+                        <input type="radio" name="rating2" className="mask mask-star-2 bg-orange-400" />
+                        <input type="radio" name="rating2" className="mask mask-star-2 bg-orange-400" checked />
+                        <input type="radio" name="rating2" className="mask mask-star-2 bg-orange-400" />
+                        <input type="radio" name="rating2" className="mask mask-star-2 bg-orange-400" />
+                        <input type="radio" name="rating2" className="mask mask-star-2 bg-orange-400" />
                     </div>
                     <input className='btn btn-outline' type="submit" value="Add Review" />
                 </form>
