@@ -1,14 +1,16 @@
 import { signOut } from 'firebase/auth';
 import React from 'react';
 import { useAuthState } from 'react-firebase-hooks/auth';
-import { Link } from 'react-router-dom';
+import { Link, useNavigate } from 'react-router-dom';
 import auth from '../../firebase.init';
 
 const Navbar = () => {
     const [user, loading, error] = useAuthState(auth);
+    const navigate = useNavigate();
     const logout = () => {
         signOut(auth);
-        localStorage.removeItem('accessToken');
+        // localStorage.removeItem('accessToken');
+        navigate('/');
     };
     const navbarItems = <>
         <li><Link to='/'>Home</Link></li>
@@ -20,7 +22,7 @@ const Navbar = () => {
         {
             user && <li><Link to="/dashboard">Dashboard</Link></li>
         }
-        <li>{user ? <> <p className='text-primary font-bold'>{user.displayName}</p> <button onClick={logout} className="btn btn-active btn-ghost">Signout</button></> : <Link to="/login">Login</Link>}</li>
+        <li>{user ? <> <p className='text-secondary font-bold'>{user.displayName}</p> <button onClick={logout} className="btn btn-active btn-ghost">Signout</button></> : <Link to="/login">Login</Link>}</li>
     </>
     return (
         <div className="navbar bg-base-100">
@@ -40,6 +42,10 @@ const Navbar = () => {
                 <ul className="menu menu-horizontal p-0">
                     {navbarItems}
                 </ul>
+            </div>
+            {/* drawer */}
+            <div className="navbar-end">
+                <label for="my-drawer-2" className="btn btn-primary drawer-button lg:hidden">...</label>
             </div>
 
         </div>
