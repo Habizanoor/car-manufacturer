@@ -1,3 +1,19 @@
+# Server Side code link
+
+This project was bootstrapped with [Server Side code link](https://github.com/programming-hero-web-course1/manufacturer-website-server-side-Habizanoor).
+
+# Client Side code link
+
+This project was bootstrapped with [Client Side code link](https://github.com/programming-hero-web-course1/manufacturer-website-client-side-Habizanoor).
+
+### technology used
+* react Query
+* daisyUi
+* react hook form
+* tailwind
+* mongodb
+
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
