@@ -23,11 +23,12 @@ const PurchasePage = ({ perchase }) => {
         if(yourOrder < minOrder){
            toast.error('have to order more');
         //    acknowledged: false 
-        
+            return;
         }
         
         else if(yourOrder > available){
-            toast('Over available items');
+            toast.error('Over available items');
+            return;
         }
         else{
             toast('Added');

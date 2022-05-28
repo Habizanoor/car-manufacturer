@@ -1,14 +1,45 @@
 import React from 'react';
 import { useAuthState } from 'react-firebase-hooks/auth';
+import { toast } from 'react-toastify';
 import auth from '../../firebase.init';
+import Loading from '../Shared/Loading';
 
 const MyProfile = () => {
     const [user, loading] = useAuthState(auth);
     const handleUpdateProfile = event =>{
         event.preventDefault();
         const education = event.target.education.value;
-        console.log(education);
+        const linkedIn = event.target.linkedIn.value;
+        const address = event.target.address.value;
+        const phone = event.target.phone.value;
 
+        const profile ={
+            education: education,
+            linkedIn: linkedIn,
+            displayName:user.displayName,
+            email:user.email,
+            address:address,
+            phone: phone
+        }
+        // fetch('http://localhost:5000/review',{
+        //     method:'POST',
+        //     headers:{
+        //         'content-type':'application/json'
+        //     },
+        //     body: JSON.stringify(profile)
+        // })
+        // .then(res => res.json())
+
+        // .then(data => {
+        //     toast('Profile Updated')
+        //     console.log(data);
+        // })
+
+        console.log(education, linkedIn, address, phone);
+
+    }
+    if(loading){
+        return <Loading></Loading>
     }
     return (
         <div>

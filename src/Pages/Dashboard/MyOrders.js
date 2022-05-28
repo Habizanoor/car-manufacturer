@@ -9,8 +9,9 @@ const MyOrders = () => {
                     <tr>
                         <th></th>
                         <th>Name</th>
-                        <th>Job</th>
-                        <th>Favorite Color</th>
+                        <th>Email</th>
+                        <th>Product Name</th>
+                        <th>Ordered Quantity</th>
                     </tr>
                 </thead>
                 <tbody>
@@ -20,21 +21,9 @@ const MyOrders = () => {
                         <td>Cy Ganderton</td>
                         <td>Quality Control Specialist</td>
                         <td>Blue</td>
+                        <td>Blue</td>
                     </tr>
-                    {/* <!-- row 2 --> */}
-                    <tr class="active">
-                        <th>2</th>
-                        <td>Hart Hagerty</td>
-                        <td>Desktop Support Technician</td>
-                        <td>Purple</td>
-                    </tr>
-                    {/* <!-- row 3 --> */}
-                    <tr>
-                        <th>3</th>
-                        <td>Brice Swyre</td>
-                        <td>Tax Accountant</td>
-                        <td>Red</td>
-                    </tr>
+                   
                 </tbody>
             </table>
         </div>
