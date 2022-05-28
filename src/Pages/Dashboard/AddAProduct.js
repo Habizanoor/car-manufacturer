@@ -2,6 +2,7 @@ import React from 'react';
 import { toast } from 'react-toastify';
 import Loading from '../Shared/Loading';
 
+
 const AddAProduct = () => {
     
     const addProduct = event => {

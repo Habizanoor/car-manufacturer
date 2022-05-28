@@ -21,6 +21,7 @@ import ManageProducts from './Pages/Dashboard/ManageProducts';
 import NotFound from './Pages/Shared/NotFound';
 import { ToastContainer } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
+import MakePayment from './Pages/Dashboard/MakePayment';
 
 function App() {
   const [tools, setTools] = useState([]);
@@ -50,6 +51,7 @@ function App() {
         </Route>
         <Route path='/login' element={<Login></Login>}></Route>
         <Route path='/signUp' element={<SignUp></SignUp>}></Route>
+        <Route path='/makePayment' element={<MakePayment></MakePayment>}></Route>
         <Route path='*' element={<NotFound></NotFound>}></Route>
       </Routes>
       <ToastContainer />
