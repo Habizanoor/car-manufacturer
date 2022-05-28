@@ -5,8 +5,8 @@ const useToken = (user) => {
     useEffect(()=>{
         console.log('user inside useToken',user);
         const email = user?.user?.email;
-        const currentUser = {user: user};
-        if(user){
+        const currentUser = {email: email};
+        if(email){
             fetch(`http://localhost:5000/user/${email}`,{
                 method: 'PUT',
                 headers:{
@@ -18,7 +18,8 @@ const useToken = (user) => {
             .then(data =>{
                 console.log('data inside useToken', data);
                 const accessToken = data.token;
-                localStorage.setItem('accessToken',accessToken);
+                localStorage.setItem('accessToken', accessToken);
+                // localStorage.setItem('accessToken',accessToken);
                 setToken(accessToken);
             })
         }

@@ -4,6 +4,7 @@ import { useSignInWithGoogle, useSignInWithEmailAndPassword } from 'react-fireba
 import { useForm } from "react-hook-form";
 import Loading from '../Shared/Loading';
 import { Link, useLocation, useNavigate } from 'react-router-dom';
+import useToken from '../../hooks/useToken';
 // import useToken from '../../hooks/useToken';
 
 
@@ -21,7 +22,7 @@ const Login = () => {
         error,
     ] = useSignInWithEmailAndPassword(auth);
     let signinErrorMessage;
-    // const [token] = useToken(gUser || user);
+    const [token] = useToken(gUser || user);
     
     
     useEffect(()=>{

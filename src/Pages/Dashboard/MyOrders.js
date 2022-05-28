@@ -1,29 +1,45 @@
-import React from 'react';
+import React, { useEffect, useState } from 'react';
+import { useAuthState } from 'react-firebase-hooks/auth';
+import auth from '../../firebase.init';
 
 const MyOrders = () => {
+    const [orderss, setOrders] = useState([]);
+    const [user] = useAuthState(auth);
+    
+    useEffect(() => {
+        if (user) {
+            fetch(`http://localhost:5000/order?buyer=${user.email}`)
+                .then(res => res.json())
+                .then(data => setOrders(data));
+        }
+    }, [user])
     return (
         <div class="overflow-x-auto">
             <table class="table w-full">
-                {/* <!-- head --> */}
+                
                 <thead>
                     <tr>
                         <th></th>
-                        <th>Name</th>
+                        <th>Buyer Name</th>
                         <th>Email</th>
                         <th>Product Name</th>
-                        <th>Ordered Quantity</th>
+                        <th>Your Ordered Quantity</th>
                     </tr>
                 </thead>
                 <tbody>
-                    {/* <!-- row 1 --> */}
-                    <tr>
-                        <th>1</th>
-                        <td>Cy Ganderton</td>
-                        <td>Quality Control Specialist</td>
-                        <td>Blue</td>
-                        <td>Blue</td>
-                    </tr>
-                   
+                    {
+                        orderss.map((order, index) =>
+                            <tr>
+                                <th>{index + 1}</th>
+                                <td>{order.buyerName}</td>
+                                <td>{order.buyer}</td>
+                                <td>{order.productName}</td>
+                                <td>{order.yourOrder}</td>
+                            </tr>
+                        )
+                    }
+                    
+
                 </tbody>
             </table>
         </div>

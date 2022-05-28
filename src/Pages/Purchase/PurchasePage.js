@@ -22,7 +22,7 @@ const PurchasePage = ({ perchase }) => {
         const address = event.target.address.value;
         if(yourOrder < minOrder){
            toast.error('have to order more');
-        //    acknowledged: false 
+         
             return;
         }
         
