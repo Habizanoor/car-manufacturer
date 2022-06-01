@@ -50,7 +50,7 @@ const PurchasePage = ({ perchase }) => {
             
         }
 
-        fetch('http://localhost:5000/order',{
+        fetch('https://aqueous-reef-16634.herokuapp.com/order',{
             method:'POST',
             headers:{
                 'content-type':'application/json'

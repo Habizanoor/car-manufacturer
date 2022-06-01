@@ -11,7 +11,7 @@ const MyOrders = () => {
 
     useEffect(() => {
         if (user) {
-            fetch(`http://localhost:5000/order?buyer=${user.email}`)
+            fetch(`https://aqueous-reef-16634.herokuapp.com/order?buyer=${user.email}`)
                 .then(res => res.json())
                 .then(data => setOrders(data));
         }

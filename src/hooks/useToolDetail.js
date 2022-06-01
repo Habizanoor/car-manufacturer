@@ -3,7 +3,7 @@ import { useEffect, useState } from "react";
 const useToolDetail = _id =>{
     const [perchase, setPurchase] = useState({});
     useEffect(()=>{
-        const url = `http://localhost:5000/tool/${_id}`;
+        const url = `https://aqueous-reef-16634.herokuapp.com/tool/${_id}`;
         fetch(url)
         .then(res=>res.json())
         .then(data=>setPurchase(data));

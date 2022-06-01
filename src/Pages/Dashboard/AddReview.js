@@ -19,7 +19,7 @@ const AddReview = () => {
             buyerName:user.displayName,
             rating:rating2
         }
-        fetch('http://localhost:5000/review',{
+        fetch('https://aqueous-reef-16634.herokuapp.com/review',{
             method:'POST',
             headers:{
                 'content-type':'application/json'

@@ -22,7 +22,7 @@ const Profile = () => {
             address: address,
             phone: phone
         }
-        fetch('http://localhost:5000/profile',{
+        fetch('https://aqueous-reef-16634.herokuapp.com/profile',{
             method:'POST',
             headers:{
                 'content-type':'application/json'

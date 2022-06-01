@@ -3,7 +3,7 @@ import React, { useEffect, useState } from 'react';
 const ManageAllOrders = () => {
     const [tools, setTools] = useState([]);
     useEffect(() => {
-        fetch('http://localhost:5000/tool')
+        fetch('https://aqueous-reef-16634.herokuapp.com/tool')
             .then(res => res.json())
             .then(data => setTools(data));
     }, [])

@@ -2,6 +2,10 @@
 
 This project was bootstrapped with [Server Side code link](https://github.com/programming-hero-web-course1/manufacturer-website-server-side-Habizanoor).
 
+# Live site link
+
+This project was bootstrapped with [Live site link](https://car-parts-manufacturer-ab6f5.web.app/).
+
 # Client Side code link
 
 This project was bootstrapped with [Client Side code link](https://github.com/programming-hero-web-course1/manufacturer-website-client-side-Habizanoor).

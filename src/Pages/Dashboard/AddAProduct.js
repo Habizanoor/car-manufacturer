@@ -22,7 +22,7 @@ const AddAProduct = () => {
             description:description,
             picture:picture
         }
-        fetch('http://localhost:5000/tool',{
+        fetch('https://aqueous-reef-16634.herokuapp.com/tool',{
             method:'POST',
             headers:{
                 'content-type':'application/json'
